@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+body {
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	background-color: #f1f1f1;
+	font-family: 'Pacifico', cursive;
+     }
+
+h1 { font-size: 2.5em;
+     text-align: center;
+	background-color: salmon;
+     color: white;
+     width: 80%;
+     margin-left: 10%;
+     }
+h2 {
+	font-size: 2em;
+	font-weight: normal;}
+h3 {
+	font-size: 2em;
+     color: salmon;
+	font-weight: normal;}
+label {
+	font-size: 2em;
+}
+
+/* Search input */
+.box{
+     font-size: 2.5em;
+     width: 8em;
+	border: 4px solid #999;
+     padding-left:2px;
+	}
+.box:hover {
+	border: 3px solid salmon;
+     background-color: lightyellow;
+	}
+.box:focus {
+	border: 5px solid salmon;
+	outline: none;}
+
+
+/* Gallery of images */
+#gallery {
+	text-align: center;
+	max-width: 1020px;
+     padding-left: 10%;
+	margin: 0px auto;}
+
+#gallery img {
+	width: 150px;
+	height: 150px;
+	border-radius: 3px;
+	border: 8px solid #fff;
+	margin: 6px;
+    -webkit-box-shadow: 0 0 3px 3px #ebebeb;
+     box-shadow: 0 0 3px 3px #ebebeb;
+	float: left;}
+
+
