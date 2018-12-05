@@ -11,7 +11,7 @@ $(document).ready(function() {
         let arry = topic.split(" "); // turn topic string into array
         let tagmode = " ";
 
-
+        // create formatted string that will be query to Flickr.
         for (i = 0; i < arry.length; i++) {
 
             if (i < arry.length - 1) {
@@ -29,7 +29,7 @@ $(document).ready(function() {
         }
 
 
-
+        // change tag mode based on radio button selected
         var radioValue = $("input[name='radioGrp']:checked").val();
 
         if(radioValue === "all"){
@@ -43,7 +43,6 @@ $(document).ready(function() {
         //reset arrays for each query
         topicString = [];
         searchArry = [];
-        alert(ajaxURL);
 
         $.getJSON(ajaxURL,function(data) {
             $('h3').text(data.title);
