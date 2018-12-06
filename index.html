@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Flickr Popular Public Feed</title>
+<link rel="stylesheet" href="css/format.css" />
+<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="javascriptFile.js" ></script>
+
+</head>
+<body>
+    <div class="main">
+
+      <form id="myForm">
+       <h1>query flickr for recent uploads of your choice!</h1>
+       <h2>please enter the flickr tags you'd like to use in the search</h2>
+       <input type="text" name="tags" class="box" value="purple  flowers">
+       <h2>please indicate the use of all tags or any of the tags</h2>
+       <label> all tags</label>
+       <input type="radio" name="radioGrp" value="all" checked>
+       <label> any tags</label>
+       <input type="radio" name="radioGrp" value="any">
+       <h1>double-click anywhere on the page to bring the pictures!</h1>
+     </form>
+
+        <div class="content">
+            <h3></h3>
+            <div id="gallery"></div>
+        </div>
+    </div>
+</body>
+</html>
